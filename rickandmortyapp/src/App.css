@@ -1,0 +1,102 @@
+.index{
+  display:flex;
+}
+
+
+.ambos{ 
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+.rickyimg{
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition-duration: 7s;
+  transition-property: opacity filter ;
+}
+.mortyimg{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition-delay: 10s;
+  transition-duration: 7s ;
+  transition-property: opacity filter ;
+}
+:hover .rickyimg {
+  filter: saturate(1.1);
+  opacity: 1;
+}
+:hover .mortyimg {
+  filter: saturate(1.1);
+  opacity: 1;
+}
+
+.centrado{
+  position: absolute;
+  border: 1px solid black;
+  box-shadow:black ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(254, 255, 254, 0.719);
+  box-sizing: border-box;
+  border-radius: 5%;
+  margin: 0px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 60px rgb(75, 75, 75);
+}
+.title{
+  position: absolute;
+  top:20%;
+  left:37%;
+  color:red;
+}
+.errors{
+  margin-left: 20%;
+  position: relative;
+  color:red
+}
+.emailDiv{
+  border-radius: 3%;
+  margin:18%;
+  top: 10%;
+  position: absolute;
+  border:1px solid black;
+  padding: 0;
+  object-fit: contain;
+  width: 64%;
+  box-shadow: 0 0 10px black;
+}
+.passDiv{
+  border-radius: 3%;
+  width: 64%;
+  position: absolute;
+  margin:18%;
+  top: 30%;
+  border:1px solid black;
+  box-shadow: 0 0 10px black;
+}
+.buttonLogin{
+  position: absolute;
+  margin:25%;
+  top:40%;
+  height: 25px;
+  width: 200px;
+  background-color: rgb(79, 233, 79);
+  border: 1px solid green;
+  border-radius: 5%;
+  box-shadow: 0 0 10px black;
+  transition-property: box-shadow ;
+  transition-duration: 3s;
+}
+:hover .buttonLogin{
+  box-shadow: 0 0 30px greenyellow;
+}
